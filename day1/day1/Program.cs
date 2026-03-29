@@ -25,64 +25,9 @@ namespace day1
 
         static void Main(string[] args)
         {
-            for (int i = 0; i <= 20; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-                continue;
-            }
 
-            while (true)
-            {
-                Console.WriteLine("enter password");
-                var abc = Console.ReadLine();
-                if (abc == "secret123")
-                {
-                    Console.WriteLine("Verified");
-                    break;
-                }
-                else
-                    Console.WriteLine("NOt Verified");
-            }
             int choice;
-
-            do
-            {
-                Console.WriteLine("enter 1 for Addition");
-                Console.WriteLine("enter 2 for Sybstraction");
-                Console.WriteLine("enter 3 for Exit");
-                choice = int.Parse(Console.ReadLine());
-
-            } while (choice != 3);
-
-            string answer;
-
-            do
-            {
-                Console.WriteLine("Would you like to continue (Y/N)?");
-                answer = Console.ReadLine(); // Get user input
-
-                // Optional: convert input to lowercase for simpler condition checking
-                if (answer != null)
-                {
-                    answer = answer.ToLower();
-                }
-
-            } while (answer != "y" && answer != "n"); // Loop continues as long as input is NOT 'y' and NOT 'n'
-
-            Console.WriteLine($"User selected: {answer}");
-            Console.WriteLine("Program continues...");
-
-            // MILESTONE PROJECT: Smart Calculator Console App Build a console calculator
-            // that: • Has a menu loop(do -while): 1 = Add, 2 = Subtract, 3 = Multiply, 4 = Divide,
-            // 5 = Modulus, 6 = Quit • Asks for two numbers using Console.ReadLine() with TryParse
-            // validation • Handles division by zero with a clear error message
-            // 
-
-            
-            double num1, num2;
+            double num1 = 0, num2 = 0;
             bool isValid;
 
             do
@@ -112,15 +57,51 @@ namespace day1
                             Console.WriteLine("Invalid input. Try again.");
                     } while (!isValid);
 
+                    do
+                    {
+                        Console.Write("Enter second number: ");
+                        isValid = double.TryParse(Console.ReadLine(), out num2);
+                        if (!isValid)
+                            Console.WriteLine("Invalid input. Try again.");
+                    } while (!isValid);
 
 
                 }
-                while
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("Result: " + (num1 + num2));
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Result: " + (num1 - num2));
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Result: " + (num1 * num2));
+                        break;
+
+                    case 4:
+                        if (num2 == 0)
+                            Console.WriteLine("Error: Cannot divide by zero.");
+                        else
+                            Console.WriteLine("Result: " + (num1 / num2));
+                        break;
+                    case 5:
+                        if (num2 == 0)
+                            Console.WriteLine("Error: Cannot perform modulus with zero.");
+                        else
+                            Console.WriteLine("Result: " + (num1 % num2));
+                        break;
+                }
+            } while (choice != 6);
+
+            Console.WriteLine("Calculator closed. Goodbye!");
 
 
 
 
 
-
-
+        }
     }
+}
