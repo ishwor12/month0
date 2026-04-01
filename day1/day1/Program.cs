@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.Remoting.Messaging;
@@ -14,105 +15,68 @@ namespace day1
 {
     internal class Program
     {
-        // class
+        //        Console app: Build a MathHelper class with these methods: • int Add(int a, int b) •
+        //double Divide(double a, double b) — returns 0 if b==0 • bool IsEven(int n) • int Max(int
+        //a, int b) • int Max(int a, int b, int c) — overload • string Repeat(string s, int times = 3) —
+        //optional param Call every method from Main and print the results
 
-        internal class Item
+        
+        internal int Add(int value1, int value2)
         {
-            public string Name { get; set; }
-            public double Price { get; set; }
+            
+            return  value1 + value2;
+        }
+        public double Divide(double a, double b)
+        {
+            if (b == 0)
+                return 0;
+            return a / b;
         }
 
 
 
         static void Main(string[] args)
         {
-            List<Item> cart = new List<Item>();
-            int Choice;
-            do
+            Program p = new Program();
+           
+                Console.WriteLine("Enter Value 1");
+            p.Add(4, 5);
+
+            int[] numbers = new int[5];
+
+            Console.WriteLine("Enter 5 numbers:");
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine("\n=== Simple Shopping Cart ===");
-                Console.WriteLine("1. Add Item");
-                Console.WriteLine("2. Remove Item");
-                Console.WriteLine("3. View Cart");
-                Console.WriteLine("4. Clear Cart");
-                Console.WriteLine("5. Quit");
-                Console.Write("Enter your choice: ");
-
-                if (!int.TryParse(Console.ReadLine(), out Choice))
+                while (true)
                 {
-                    Console.WriteLine("Invalid Choice");
-                    continue;
-                }
-                switch (Choice)
-                {
-
-
-                    case 1: // Add Item
-                        Console.Write("Enter item name: ");
-                        string name = Console.ReadLine();
-
-                        double price;
-                        bool validPrice;
-                        do
-                        {
-                            Console.Write("Enter item price: ");
-                            validPrice = double.TryParse(Console.ReadLine(), out price);
-                            if (!validPrice || price < 0)
-                                Console.WriteLine("Invalid price. Enter a positive number.");
-                        } while (!validPrice || price < 0);
-
-                        cart.Add(new Item { Name = name, Price = price });
-                        Console.WriteLine($"Added {name} - ${price:F2}");
-
+                    Console.Write($"Enter number {i + 1}: ");
+                    if (int.TryParse(Console.ReadLine(), out numbers[i]))
                         break;
-                    case 2: // Remove Item
-                        Console.Write("Enter item name to remove: ");
-                        string removeName = Console.ReadLine();
-
-                        Item removable = cart.FirstOrDefault(i => i.Name.Equals(removeName, StringComparison.OrdinalIgnoreCase));
-
-                        if (removable != null)
-                        {
-                            cart.Remove(removable);
-                            Console.WriteLine($"Removed {removeName} from cart.");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Item '{removeName}' not found in cart.");
-                        }
-                        break;
-                    case 3: // View Cart
-                        if (cart.Count == 0)
-                        {
-                            Console.WriteLine("Cart is empty.");
-                        }
-                        else
-                        {
-                            Console.WriteLine("\nItems in Cart:");
-                            foreach (var item in cart.OrderBy(i => i.Name))
-                            {
-                                Console.WriteLine($"{item.Name} - ${item.Price:F2}");
-                            }
-                            Console.WriteLine($"Total Price: ${cart.Sum(i => i.Price):F2}");
-                        }
-                        break;
-                    case 4: // Clear Cart
-                        cart.Clear();
-                        Console.WriteLine("Cart has been cleared.");
-                        break;
-
-                    case 5: // Quit
-                        Console.WriteLine("Thank you for shopping! Goodbye.");
-                        break;
-
-                    default:
-                        Console.WriteLine("Invalid choice. Try again.");
-                        break;
-
+                    else
+                        Console.WriteLine("Invalid input. Try again.");
                 }
             }
-            while (Choice != 5);
+            Console.WriteLine("Smallest: " + numbers.Min());
+            Console.WriteLine("Largest: " + numbers.Max());
+            Console.WriteLine("Average: " + numbers.Average());
 
+            var sorted = numbers.OrderBy(n => n).ToArray();
+            Console.WriteLine("Sorted: " + string.Join(", ", sorted));
+            var dsorted = numbers.OrderByDescending(n => n).ToArray();
+            Console.WriteLine("Desc - Sorted: " + string.Join(", ", dsorted));
+
+            Dictionary<string, List<string>> Entries = new Dictionary<string, List<string>>();
+            Entries.Add("Ishwor",new List<string> { "Work Hard","Learn Everyday","Get Job"});
+            Entries.Add("Sabi",new List<string> { "Work Smart","Learn English","Improve Skill"});
+            Entries.Add("Ishita",new List<string> { "Study","No Mobile","No Sweets"});
+
+            foreach (var item in Entries)
+            {
+                Console.WriteLine(item.Key);
+                Console.WriteLine(string.Join(", ", item.Value));
+            }
+        
         }
 
 
