@@ -16,60 +16,115 @@ namespace day1
 {
     internal class Program
     {
+        static List<Student> students = new List<Student>();
 
-
-        static void Main(string[] args)
+        enum Grade
         {
-            Console.Write("Enter your Date of Birth (MM/DD/yyyy): ");
-            if (!DateTime.TryParse(Console.ReadLine(), out DateTime dob))
+            A, B, C, F
+        }
+        class Student
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public DateTime DOB { get; set; }
+            public List<int> Scores { get; set; } = new List<int>();
+
+
+            public Double GetAverage()
             {
-                Console.WriteLine("Invalid data");
+                if (Scores.Count == 0)
+                {
+                    return 0;
+                }
+                return Scores.Average();
             }
 
-            DateTime today = DateTime.Today;
-
-            int ageYear = today.Year - dob.Year;
-
-            int ageMnth = today.Month - dob.Month;
-
-            int ageDays = today.Day - dob.Day;
-
-            if (today < dob.AddYears(ageYear))
+            public int GetAge()
             {
-                ageYear--;
+                DateTime today = DateTime.Today;
+                int Age = today.Year - DOB.Year;
+                if (today < DOB.AddYears(Age))
+                    Age--;
+
+                return Age;
             }
-             if (today < dob.AddMonths(ageMnth))
+
+        }
+            static void Main(string[] args)
+        {
+             int choice;
+            do
             {
-                ageMnth--;
+                Console.WriteLine("\n=== Student Grade Calculator ===");
+                Console.WriteLine("1. Add Student");
+                Console.WriteLine("2. Add Score");
+                Console.WriteLine("3. View All Students");
+                Console.WriteLine("4. Leaderboard");
+                Console.WriteLine("5. Search Student");
+                Console.WriteLine("6. Quit");
+                Console.Write("Enter choice: ");
+                if (!int.TryParse(Console.ReadLine(), out choice))
+                {
+                    Console.WriteLine("Invalid Input");
+                    continue;
+                }
+                switch (choice)
+                {
+                    case 1:
+                        Console.Write("Enter name: ");
+                        string name = Console.ReadLine();
+
+                        Console.Write("Enter DOB (dd/mm/yyyy): ");
+                        DateTime dob;
+                        while (!DateTime.TryParse(Console.ReadLine(), out dob))
+                        {
+                            Console.Write("Invalid date. Try again: ");
+                        }
+                        students.Add(new Student { Name=name, DOB=dob });
+                        break;
+                    case 2:
+                        Console.Write("Enter student name: ");
+                        string Name = Console.ReadLine().ToUpper();
+
+                        var student = students.FirstOrDefault(s => s.Name.ToUpper() == Name);
+
+                        if (student == null)
+                        {
+                            Console.WriteLine("Student not found.");
+                            return;
+                        }
+
+                        Console.Write("Enter score: ");
+                        int score;
+                        while (!int.TryParse(Console.ReadLine(), out score) || score < 0 || score > 100)
+                        {
+                            Console.Write("Invalid score (0-100). Try again: ");
+                        }
+
+                        student.Scores.Add(score);
+                        Console.WriteLine("Score added!");
+                        break;
+                    case 3:
+                        if (students.Count == 0)
+                        {
+                            Console.WriteLine("No students found.");
+                            return;
+                        }
+
+                        var sorted = students
+                            .OrderByDescending(s => s.GetAverage())
+                            .ToList();
+
+                        Console.WriteLine("\n=== Leaderboard ===");
+
+                        for (int i = 0; i < sorted.Count; i++)
+                        {
+                            Console.WriteLine($"{i + 1}. {sorted[i].Name} - {sorted[i].GetAverage():F2}");
+                        }
+                        break;
+                }
             }
-            if (today < dob.AddDays(ageDays))
-            {
-                ageDays--;
-            }
-            Console.WriteLine("Your Age is: " + ageYear + " years" + ageMnth + " Months" + ageDays + " Days");
-
-            // =========================
-            // (2) EVENT COUNTDOWN
-            // =========================
-            Console.Write("\nEnter event name: ");
-            string eventName = Console.ReadLine();
-
-            Console.Write("Enter event date (dd/mm/yyyy): ");
-            DateTime eventDate;
-
-            while (!DateTime.TryParse(Console.ReadLine(),out eventDate))
-            {
-                Console.Write("Invalid format. Please use dd/mm/yyyy: ");
-            }
-            int daysRemaining = (eventDate - today).Days;
-
-            if (daysRemaining > 0)
-                Console.WriteLine($"{eventName} is in {daysRemaining} days.");
-            else if (daysRemaining == 0)
-                Console.WriteLine($"{eventName} is today!");
-            else
-                Console.WriteLine($"{eventName} already happened {Math.Abs(daysRemaining)} days ago.");
-
+            while (choice != 6);
         }
 
     }
