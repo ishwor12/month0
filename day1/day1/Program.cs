@@ -8,124 +8,122 @@ using System.Reflection;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.Remoting.Messaging;
 using System.Security.Policy;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace day1
 {
-    internal class Program
+    class BankAccount
     {
-        static List<Student> students = new List<Student>();
+        private string _accountNumber;
+        private double _balance;
+        private string _ownerName;
 
-        enum Grade
+        public BankAccount(string accountNumber, string ownerName, double initialBalance = 0)
         {
-            A, B, C, F
-        }
-        class Student
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public DateTime DOB { get; set; }
-            public List<int> Scores { get; set; } = new List<int>();
-
-
-            public Double GetAverage()
-            {
-                if (Scores.Count == 0)
-                {
-                    return 0;
-                }
-                return Scores.Average();
-            }
-
-            public int GetAge()
-            {
-                DateTime today = DateTime.Today;
-                int Age = today.Year - DOB.Year;
-                if (today < DOB.AddYears(Age))
-                    Age--;
-
-                return Age;
-            }
+            _accountNumber = accountNumber;
+            _ownerName = ownerName;
+            _balance = initialBalance;
 
         }
-            static void Main(string[] args)
+        public void Deposit(double amount)
         {
-             int choice;
-            do
+            if (amount <= 0)
             {
-                Console.WriteLine("\n=== Student Grade Calculator ===");
-                Console.WriteLine("1. Add Student");
-                Console.WriteLine("2. Add Score");
-                Console.WriteLine("3. View All Students");
-                Console.WriteLine("4. Leaderboard");
-                Console.WriteLine("5. Search Student");
-                Console.WriteLine("6. Quit");
-                Console.Write("Enter choice: ");
-                if (!int.TryParse(Console.ReadLine(), out choice))
-                {
-                    Console.WriteLine("Invalid Input");
-                    continue;
-                }
-                switch (choice)
-                {
-                    case 1:
-                        Console.Write("Enter name: ");
-                        string name = Console.ReadLine();
-
-                        Console.Write("Enter DOB (dd/mm/yyyy): ");
-                        DateTime dob;
-                        while (!DateTime.TryParse(Console.ReadLine(), out dob))
-                        {
-                            Console.Write("Invalid date. Try again: ");
-                        }
-                        students.Add(new Student { Name=name, DOB=dob });
-                        break;
-                    case 2:
-                        Console.Write("Enter student name: ");
-                        string Name = Console.ReadLine().ToUpper();
-
-                        var student = students.FirstOrDefault(s => s.Name.ToUpper() == Name);
-
-                        if (student == null)
-                        {
-                            Console.WriteLine("Student not found.");
-                            return;
-                        }
-
-                        Console.Write("Enter score: ");
-                        int score;
-                        while (!int.TryParse(Console.ReadLine(), out score) || score < 0 || score > 100)
-                        {
-                            Console.Write("Invalid score (0-100). Try again: ");
-                        }
-
-                        student.Scores.Add(score);
-                        Console.WriteLine("Score added!");
-                        break;
-                    case 3:
-                        if (students.Count == 0)
-                        {
-                            Console.WriteLine("No students found.");
-                            return;
-                        }
-
-                        var sorted = students
-                            .OrderByDescending(s => s.GetAverage())
-                            .ToList();
-
-                        Console.WriteLine("\n=== Leaderboard ===");
-
-                        for (int i = 0; i < sorted.Count; i++)
-                        {
-                            Console.WriteLine($"{i + 1}. {sorted[i].Name} - {sorted[i].GetAverage():F2}");
-                        }
-                        break;
-                }
+                Console.WriteLine("Deposit amount must be positive.");
+                return;
             }
-            while (choice != 6);
+            _balance += amount;
+            Console.WriteLine("Sucessfully Deposited");
+        }
+        public void Withdraw(double amount)
+        {
+            if (amount <= 0)
+            {
+                Console.WriteLine("Withdrawal amount must be positive.");
+                return;
+            }
+
+            if (amount > _balance)
+            {
+                Console.WriteLine("Insufficient balance.");
+                return;
+            }
+
+            _balance -= amount;
+            Console.WriteLine("Withdraw");
+        }
+        public double GetBalance()
+        {
+            return _balance;
+        }
+        public virtual double CalculateFee()
+        {
+            return 5.00;
+        }
+        public virtual void Display()
+        {
+            Console.WriteLine($"{_ownerName} | Balance: ${_balance:F2}");
         }
 
     }
+    class SavingsAccount : BankAccount
+    {
+        public SavingsAccount(string accNo, string Name, double Balance):base(accNo, Name, Balance)
+        {
+
+        }
+        public override double CalculateFee()
+        {
+            return 10.00;
+        }
+
+    }
+        internal class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+            BankAccount acc1 = new BankAccount("ACC001", "John", 500);
+            BankAccount acc2 = new BankAccount("ACC002", "Alice", 1000);
+            BankAccount acc3 = new BankAccount("ACC003", "Bob", 200);
+            // Perform transactions
+            acc1.Deposit(200);
+            acc1.Withdraw(100);
+
+            acc2.Withdraw(1500); // should fail
+            acc2.Deposit(300);
+
+            acc3.Withdraw(50);
+            acc3.Deposit(-20); // should fail
+
+            // Print statements
+            acc1.GetBalance();
+            acc2.GetBalance();
+            acc3.GetBalance();
+
+
+
+            List<BankAccount> accounts = new List<BankAccount>
+        {
+            new BankAccount("A001", "John", 500),
+            new SavingsAccount("A002", "Alice", 1500),
+            new SavingsAccount("A003", "Bob", 800),
+             };
+
+foreach (var item in accounts)
+            {
+                item.Display();
+
+                Console.WriteLine($"Fee: ${item.CalculateFee():F2}");
+                Console.WriteLine("----------------------");
+            }
+
+
+        }
+    }
+
 }
