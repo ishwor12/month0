@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\InsufficientFundsException.cs" />
+    <Compile Include="Interface\INotifier.cs" />
+    <Compile Include="Logic\EmailNotifier.cs" />
     <Compile Include="Logic\FinanceManager.cs" />
     <Compile Include="Models\Classes\BankAccount.CS" />
     <Compile Include="Models\Classes\Expense.cs" />

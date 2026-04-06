@@ -28,6 +28,16 @@ namespace day1.Models
             this.JointAccountName = JointAccountName;
             this.InterestAmount = InterestAmount;
         }
+        public override decimal CalculateFee()
+        {
+            return Balance + InterestAmount;
+        }
+
+        public override void DisplayDetails()
+        {
+            base.DisplayDetails();
+            Console.WriteLine($"Business Name: {JointAccountName}");
+        }
 
     }
 }

@@ -1,9 +1,13 @@
-﻿using day1.Models;
+﻿using day1.Helper;
+using day1.Interface;
+using day1.Logic;
+using day1.Models;
 using day1.Models.Classes;
 using day1.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +20,8 @@ namespace day1
         private List<Transaction> transaction = new List<Transaction>();
         private List<Expense> expenses = new List<Expense>();
 
+   
+ 
         private int _nextAccountId = 1;
         public int GenerateAccountId()
         {
@@ -34,7 +40,13 @@ namespace day1
                 }
             }
             accounts.Add(account);
+            var notifiers = new List<INotifier>
+            {
+                new EmailNotifier()
+            };
+            NotifyAll(notifiers, "Account created  with details:: ---- :: Email Sent successfully!");
             return "Account created successfully.";
+            
         }
         
         public BankAccount FindAccountBYId(int AccountId)
@@ -45,8 +57,10 @@ namespace day1
                 {
                     return account;
                 }
+                if (account == null)
+                    throw new AccountNotFoundException(AccountId);
             }
-
+            
             return null;
         }
         public BankAccount FindAccountByName(string AccountName)
@@ -55,7 +69,7 @@ namespace day1
         }
         public List<BankAccount> GetAllAccount()
         {
-            return new List<BankAccount>();
+            return accounts;
         }
 
 
@@ -63,10 +77,6 @@ namespace day1
         public string DepositToAccount(int AccountId, decimal Amount)
         {
             var account = FindAccountBYId(AccountId);
-            if (account == null)
-            {
-                return "Account not found.";
-            }
             if (Amount <= 0)
             {
                 return "Deposit amount must be greater than zero.";
@@ -124,9 +134,16 @@ namespace day1
             return transaction;
         }
 
-
         // Expenses Method
 
+
+        static void NotifyAll(List<INotifier> notifiers, string message)
+        {
+            foreach (var notifier in notifiers)
+            {
+                notifier.Send(message);
+            }
+        }
 
     }
 }

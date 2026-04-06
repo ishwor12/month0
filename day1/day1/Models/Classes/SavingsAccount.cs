@@ -32,6 +32,16 @@ namespace day1.Models
             InterestRate = interestRate;
             SavingsGoalAmount = savingsGoalAmount;
         }
+        public override decimal CalculateFee()
+        {
+            return Balance > 1000 ? 0 : 2.5m;
+        }
+
+        public override void DisplayDetails()
+        {
+            base.DisplayDetails();
+            Console.WriteLine($"Interest Rate: {InterestRate}");
+        }
 
     }
 }

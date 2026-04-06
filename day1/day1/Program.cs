@@ -1,4 +1,5 @@
-﻿using day1.Models;
+﻿using day1.Helper;
+using day1.Models;
 using day1.Models.Enums;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace day1
 
     internal class Program
     {
-      
+
         static void Main(string[] args)
         {
             FinanceManager manager = new FinanceManager();
@@ -52,6 +53,7 @@ namespace day1
                     case 4:
                         Withdraw(manager);
                         break;
+
 
                     default:
                         Console.WriteLine("Invalid option.");
@@ -137,7 +139,6 @@ namespace day1
                 Console.WriteLine($"Error: {ex.Message}");
             }
         }
-
         static void ViewAccount(FinanceManager manager)
         {
             var account = manager.GetAllAccount();
@@ -164,7 +165,6 @@ namespace day1
 
                 // check if account exist
 
-
                 Console.Write("Amount: ");
                 decimal amount = decimal.Parse(Console.ReadLine());
 
@@ -172,9 +172,14 @@ namespace day1
 
                 Console.WriteLine("Deposit successful!");
             }
-            catch (Exception ex)
+            catch (AccountNotFoundException ex)
             {
-                Console.WriteLine($"Error: {ex.Message}");
+                Console.WriteLine(ex.Message);
+            }
+           
+            catch (Exception)
+            {
+                Console.WriteLine("Unexpected error occurred.");
             }
         }
         static void Withdraw(FinanceManager manager)
@@ -195,9 +200,18 @@ namespace day1
 
                 Console.WriteLine("Withdrawal successful!");
             }
-            catch (Exception ex)
+            catch (AccountNotFoundException ex)
             {
-                Console.WriteLine($"Error: {ex.Message}");
+                Console.WriteLine(ex.Message);
+            }
+           
+            catch (InsufficientFundsException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Unexpected error occurred.");
             }
         }
 
