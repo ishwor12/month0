@@ -23,6 +23,10 @@ namespace day1.Models
             Balance = balance;
             Notes = note;
         }
+        public virtual decimal CalculateFee()
+        {
+            return 5; // default fee
+        }
         public void Deposit(decimal amount)
         {
             Balance += amount;
@@ -31,6 +35,13 @@ namespace day1.Models
         public void Withdraw(decimal amount)
         {
             Balance -= amount;
+        }
+        public virtual void DisplayDetails()
+        {
+            Console.WriteLine($"\nID: {AccountId}");
+            Console.WriteLine($"Name: {OwnerName}");
+            Console.WriteLine($"Balance: {Balance}");
+            Console.WriteLine($"Type: {AccountType}");
         }
     }
 }
