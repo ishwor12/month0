@@ -6,9 +6,11 @@ using day1.Models.Classes;
 using day1.Models.Enums;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace day1
@@ -143,6 +145,41 @@ namespace day1
             {
                 notifier.Send(message);
             }
+        }
+        public void SaveData(string filePath)
+        {
+            var data = new
+            {
+                Accounts = accounts,
+                Transactions = transaction
+            };
+
+            string json = JsonSerializer.Serialize(data, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+
+            File.WriteAllText(filePath, json);
+        }
+        public void LoadData(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("No saved file found.");
+                return;
+            }
+
+            string json = File.ReadAllText(filePath);
+
+            var data = JsonSerializer.Deserialize<FinanceData>(json);
+
+            var accounts = data.Accounts ?? new List<BankAccount>();
+            var transactions = data.Transactions ?? new List<Transaction>();
+        }
+        internal class FinanceData
+        {
+            public List<BankAccount> Accounts { get; set; }
+            public List<Transaction> Transactions { get; set; }
         }
 
     }

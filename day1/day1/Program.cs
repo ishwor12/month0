@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection;
@@ -13,6 +14,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Security.Policy;
 using System.Security.Principal;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -53,7 +55,15 @@ namespace day1
                     case 4:
                         Withdraw(manager);
                         break;
+                    case 8:
+                        manager.SaveData("data.json");
+                        Console.WriteLine("Data saved!");
+                        break;
 
+                    case 9:
+                        manager.LoadData("data.json");
+                        Console.WriteLine("Data loaded!");
+                        break;
 
                     default:
                         Console.WriteLine("Invalid option.");
@@ -73,6 +83,9 @@ namespace day1
             Console.WriteLine("5 = Add Expense");
             Console.WriteLine("6 = View Transactions");
             Console.WriteLine("7 = Exit");
+            Console.WriteLine("8 = Save to file in json");
+            Console.WriteLine("7 = Load dat afrom file");
+
             Console.WriteLine("====================================");
         }
         static void CreateAccount(FinanceManager manager)
@@ -214,6 +227,6 @@ namespace day1
                 Console.WriteLine("Unexpected error occurred.");
             }
         }
-
+      
     }
 }
