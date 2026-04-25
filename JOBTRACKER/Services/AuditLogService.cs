@@ -24,7 +24,7 @@ namespace JOBTRACKER.Services
         {
             _context.AuditLogs.Add(new AuditLog
             {
-                JobApplicationId = log.Id,
+                JobApplicationId = log.JobApplicationId,
                 Action = log.Action,
                 Details = log.Details
             });
@@ -41,6 +41,5 @@ namespace JOBTRACKER.Services
             await _context.SaveChangesAsync();
         }
 
-       
     }
 }
