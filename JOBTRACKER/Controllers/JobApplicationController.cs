@@ -35,12 +35,22 @@ namespace JOBTRACKER.Controllers
             return CreatedAtAction(nameof(GetById), new { id = created.Id },created);
 
         }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, JobApplication job)
+        {
+            var updated = await _jobService.UpdateStatusAsync(id, job);
+
+            // Service returns null when job wasn't found
+            if (updated == null)
+                return NotFound(); // 404
+
+            return Ok(updated); // 200 + updated job
+        }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var (success, message) = await _jobService.DeleteAsync(id);
-            return success ? NoContent() : NotFound(message);
+          return await _jobService.DeleteAsync(id);
         }
     }
 }

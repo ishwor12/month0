@@ -22,26 +22,59 @@ namespace JOBTRACKER.Services
         public  async Task<JobApplication> CreateAsync(JobApplication job)
         {
             var created = await _jobRepository.AddAsync(job);
-            await _auditLogService.LogAsync(
-           created.Id,"Created",$"Application for {job.RoleName} at {job.CompanyName}");
+            await _auditLogService.AddAsync(new AuditLog
+            {
+                JobApplicationId = created.Id,
+                Action = "Created",
+                Details = $"Applied to {job.RoleName} at {job.CompanyName}",
+                Timestamp = DateTime.UtcNow
+            });
+
             return created;
         }
 
-        public Task DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var deleted = await _jobRepository.DeleteAsync(id);
+            if (deleted)
+            {
+                // Only log if something was actually deleted
+                await _auditLogService.AddAsync(new AuditLog
+                {
+                    JobApplicationId = id,
+                    Action = "Deleted",
+                    Details = $"Job application {id} was deleted",
+                    Timestamp = DateTime.UtcNow
+                });
+            }
+
+            return deleted;
+
+
         }
 
         public async Task<IEnumerable<JobApplication>> GetAllAsync() => await _jobRepository.GetAllAsync();
 
-
         public async Task<JobApplication?> GetByIdAsync(int id) => await _jobRepository.GetByIdAsync(id);
 
-        public Task UpdateStatusAsync(int id, ApplicationStatus status)
+        public async Task<JobApplication?> UpdateStatusAsync(int id, JobApplication job)
         {
-            throw new NotImplementedException();
+            var existing = await _jobRepository.GetByIdAsync(id);
+            if (existing == null)
+            return null;
+            job.Id = id;
+            var updated = await _jobRepository.UpdateAsync(job);
+
+            await _auditLogService.AddAsync(new AuditLog
+            {
+                JobApplicationId = id,
+                Action = "Updated",
+                Details = $"Updated {job.RoleName} at {job.CompanyName}",
+                Timestamp = DateTime.UtcNow
+            });
+
+            return updated;
         }
 
-       
     }
 }

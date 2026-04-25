@@ -20,6 +20,16 @@ namespace JOBTRACKER.Services
                 .ToListAsync();
         
 
+        public async Task AddAsync(AuditLog log)
+        {
+            _context.AuditLogs.Add(new AuditLog
+            {
+                JobApplicationId = log.Id,
+                Action = log.Action,
+                Details = log.Details
+            });
+            await _context.SaveChangesAsync();
+        }
         public async Task LogAsync(int jobId, string action, string details)
         {
             _context.AuditLogs.Add(new AuditLog
@@ -31,5 +41,6 @@ namespace JOBTRACKER.Services
             await _context.SaveChangesAsync();
         }
 
+       
     }
 }

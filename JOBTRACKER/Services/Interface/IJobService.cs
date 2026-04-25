@@ -8,7 +8,7 @@ namespace JOBTRACKER.Services.Interface
         Task<IEnumerable<JobApplication>> GetAllAsync();
         Task<JobApplication?> GetByIdAsync(int id);
         Task<JobApplication> CreateAsync(JobApplication job);
-        Task UpdateStatusAsync(int id, ApplicationStatus status);
-        Task DeleteAsync(int id);
+        Task<JobApplication?> UpdateStatusAsync(int id, JobApplication job);
+        Task <bool> DeleteAsync(int id);
     }
 }
