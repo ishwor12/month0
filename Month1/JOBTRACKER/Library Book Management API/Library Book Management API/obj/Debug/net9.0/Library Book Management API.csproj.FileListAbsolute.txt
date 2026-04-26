@@ -1,0 +1,227 @@
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.csproj.AssemblyReference.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.GeneratedMSBuildEditorConfig.editorconfig
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.AssemblyInfoInputs.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.AssemblyInfo.cs
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.csproj.CoreCompileInputs.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.MvcApplicationPartsAssemblyInfo.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.RazorAssemblyInfo.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.RazorAssemblyInfo.cs
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.sourcelink.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\appsettings.Development.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\appsettings.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.staticwebassets.runtime.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.staticwebassets.endpoints.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.exe
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.deps.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.runtimeconfig.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Library Book Management API.pdb
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Azure.Core.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Azure.Identity.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Humanizer.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.ClientModel.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.CodeDom.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Memory.Data.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\scopedcss\bundle\Library Book Management API.styles.css
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\scopedcss\projectbundle\Library Book Management API.bundle.scp.css
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\lb5q8rg7jg-{0}-b9sayid5wm-b9sayid5wm.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\qovzyfqxyo-{0}-61n19gt1b8-61n19gt1b8.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\ac88sh7fzv-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\a9dvm69845-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\q7f06piuuh-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\z0f3z0oqwn-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\gj22agsjvi-{0}-aexeepp0ev-aexeepp0ev.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\dwodljk5lp-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\cvyf0lwfx0-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\abtg0grax1-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\71jnbfiiv7-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\dre5b3zsz1-{0}-ub07r2b239-ub07r2b239.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\38zss7aucp-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\3g3tfsftz7-{0}-b7pk76d08c-b7pk76d08c.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\b4uyhuy6ki-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\lu35pvp7rk-{0}-rzd6atqjts-rzd6atqjts.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\0vi4bar0yu-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\xagsfswke9-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\22ye8retss-{0}-jd9uben2k1-jd9uben2k1.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\8ypjk7esea-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\hr33pbjji3-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\y7u1bz39u8-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\rub7s4rphj-{0}-c2oey78nd0-c2oey78nd0.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\3uq2c2373p-{0}-tdbxkamptv-tdbxkamptv.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\o3tv5wfkq1-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\4dklx1nsxn-{0}-06098lyss8-06098lyss8.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\unnhccoo72-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\326f3x66kl-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\dnauqpeont-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\by18j3jxag-{0}-46ein0sx1k-46ein0sx1k.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\4rsfv7g2ym-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\whgg65jxnu-{0}-37tfw0ft22-37tfw0ft22.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\xq9qmypo0i-{0}-hrwsygsryq-hrwsygsryq.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\yizwivlu58-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\efa4wqugcs-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\c7074nf0kb-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\6zxfi62fda-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\if9p4ikpn4-{0}-493y06b0oq-493y06b0oq.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\12li8q4fj9-{0}-iovd86k7lj-iovd86k7lj.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\8sqd3ndwm8-{0}-vr1egmr9el-vr1egmr9el.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\8rxiqyq2n7-{0}-kbrnm935zg-kbrnm935zg.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\iy0ba1spxa-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\f56czsnv16-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\0nbup3r1mg-{0}-notf2xhcfb-notf2xhcfb.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\xmo6nr88ik-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\e42u6zc1fn-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\6ftzbwls9y-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\ix3a78fsqk-{0}-47otxtyo56-47otxtyo56.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\3sjc0cqkvt-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\4u7iebaxh9-{0}-356vix0kms-356vix0kms.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\1gs7a2jgas-{0}-83jwlth58m-83jwlth58m.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\4dxyo3dnes-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\l2qc7g74je-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\atg95jh768-{0}-ag7o75518u-ag7o75518u.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\o2yyx3qh1i-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\hnh91ojly2-{0}-0i3buxo5is-0i3buxo5is.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\2265rwzp6q-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\rkkukdb26j-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\gska6xngti-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\yufrwyil2w-{0}-muycvpuwrr-muycvpuwrr.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\v5k5u6vz59-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\n1a76h6itw-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\ikyed7i000-{0}-xqfxik04cd-xqfxik04cd.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\compressed\j0364hlr1u-{0}-xqfxik04cd-xqfxik04cd.gz
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\staticwebassets.build.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\staticwebassets.development.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\swae.build.ex.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library .E4B95D16.Up2Date
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\refint\Library Book Management API.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.pdb
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.genruntimeconfig.cache
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\ref\Library Book Management API.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\github cpractice\Month1\JOBTRACKER\Library Book Management API\Library Book Management API\obj\Debug\net9.0\Library Book Management API.MvcApplicationPartsAssemblyInfo.cs
