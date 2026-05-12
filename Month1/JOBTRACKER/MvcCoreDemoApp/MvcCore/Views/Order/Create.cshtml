@@ -1,0 +1,123 @@
+﻿@using MvcCore.Models.ViewModels
+@model OrderViewModel
+
+@{
+    ViewData["Title"] = "New Order";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>New Order</h2>
+    <a asp-action="Index" class="btn btn-outline-secondary">← Back</a>
+</div>
+
+<partial name="_Alerts" />
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <form asp-action="Create" method="post" id="orderForm">
+            @Html.AntiForgeryToken()
+
+            @* Customer *@
+            <div class="mb-3">
+                <label asp-for="CustomerId" class="form-label">Customer</label>
+                <select asp-for="CustomerId" asp-items="ViewBag.Customers"
+                        class="form-select">
+                    <option value="">-- Select Customer --</option>
+                </select>
+                <span asp-validation-for="CustomerId" class="text-danger small"></span>
+            </div>
+
+            <hr />
+
+            @* Order Items *@
+            <h5>Order Items</h5>
+
+            <div id="itemsContainer">
+                <div class="row g-2 align-items-end mb-2 item-row">
+                    <div class="col-md-6">
+                        <label class="form-label">Product</label>
+                        <select name="Items[0].ProductId" class="form-select">
+                            <option value="">-- Select Product --</option>
+                            @foreach (var p in ViewBag.Products as
+                                                                  IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>
+                                                                  ?? Enumerable.Empty<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>())
+                            {
+                                <option value="@p.Value">@p.Text</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Quantity</label>
+                        <input type="number" name="Items[0].Quantity"
+                               class="form-control" value="1" min="1" />
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-outline-danger w-100"
+                                onclick="removeRow(this)">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-secondary mt-2"
+                    onclick="addRow()">
+                + Add Item
+            </button>
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-primary">Place Order</button>
+                <a asp-action="Index" class="btn btn-outline-secondary ms-2">Cancel</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        let rowIndex = 1;
+
+        function addRow() {
+            const container = document.getElementById('itemsContainer');
+            const productOptions = `@Html.Raw(string.Join("",
+                            (ViewBag.Products as IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>
+                            ?? Enumerable.Empty<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>())
+                            .Select(p => $"<option value='{p.Value}'>{p.Text}</option>")))`;
+
+            const row = `
+                <div class="row g-2 align-items-end mb-2 item-row">
+                    <div class="col-md-6">
+                        <label class="form-label">Product</label>
+                        <select name="Items[${rowIndex}].ProductId" class="form-select">
+                            <option value="">-- Select Product --</option>
+                            ${productOptions}
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Quantity</label>
+                        <input type="number" name="Items[${rowIndex}].Quantity"
+                               class="form-control" value="1" min="1" />
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-outline-danger w-100"
+                                onclick="removeRow(this)">Remove</button>
+                    </div>
+                </div>`;
+
+            container.insertAdjacentHTML('beforeend', row);
+            rowIndex++;
+        }
+
+        function removeRow(btn) {
+            const row = btn.closest('.item-row');
+            // keep at least one row
+            if (document.querySelectorAll('.item-row').length > 1)
+                row.remove();
+        }
+    </script>
+}

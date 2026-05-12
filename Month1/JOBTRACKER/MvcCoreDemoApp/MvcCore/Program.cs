@@ -4,6 +4,8 @@ using MvcCore.Data;
 using MvcCore.Models;
 using MvcCore.Repository.Implementation;
 using MvcCore.Repository.Interface;
+using MvcCore.Service.Implementation;
+using MvcCore.Service.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +21,17 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
+// Repositories
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
 builder.Services.AddScoped<IGenericRepository<Supplier>, GenericRepository<Supplier>>();
 builder.Services.AddScoped<IGenericRepository<Customer>, GenericRepository<Customer>>();
 
-
+// Services
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
 builder.Services.AddControllersWithViews();
