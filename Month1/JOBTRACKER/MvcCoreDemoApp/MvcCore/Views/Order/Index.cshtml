@@ -1,0 +1,73 @@
+﻿@model IEnumerable<OrderViewModel>
+@using MvcCore.Models.ViewModels
+
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Orders</h2>
+    <a asp-action="Create" class="btn btn-primary">+ New Order</a>
+</div>
+
+<partial name="_Alerts" />
+
+@* Status Filter Tabs *@
+<ul class="nav nav-tabs mb-3">
+    <li class="nav-item">
+        <a class="nav-link @(ViewBag.StatusFilter == null ? "active" : "")"
+           asp-action="Index">All</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(ViewBag.StatusFilter == "Pending" ? "active" : "")"
+           asp-action="Index" asp-route-status="Pending">Pending</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(ViewBag.StatusFilter == "Confirmed" ? "active" : "")"
+           asp-action="Index" asp-route-status="Confirmed">Confirmed</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(ViewBag.StatusFilter == "Cancelled" ? "active" : "")"
+           asp-action="Index" asp-route-status="Cancelled">Cancelled</a>
+    </li>
+</ul>
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var o in Model)
+        {
+            <tr>
+                <td>#@o.Id</td>
+                <td>@o.CustomerName</td>
+                <td>@o.OrderDate.ToString("dd MMM yyyy")</td>
+                <td>@o.Items.Count item(s)</td>
+                <td>$@o.OrderTotal.ToString("0.00")</td>
+                <td>
+                    <span class="badge bg-@o.StatusBadge">@o.Status</span>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@o.Id"
+                       class="btn btn-sm btn-outline-primary">View</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!Model.Any())
+{
+    <div class="text-center text-muted py-5">
+        <p>No orders found.</p>
+    </div>
+}

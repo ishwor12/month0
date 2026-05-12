@@ -1,0 +1,67 @@
+﻿@using MvcCore.Models.ViewModels
+@model OrderViewModel
+
+@{
+    ViewData["Title"] = $"Order #{Model.Id}";
+}
+
+<partial name="_Alerts" />
+
+<div class="card mb-3">
+    <div class="card-header d-flex justify-content-between">
+        <h4>Order #@Model.Id</h4>
+        <span class="badge bg-@Model.StatusBadge fs-6">@Model.Status</span>
+    </div>
+    <div class="card-body">
+        <p><strong>Customer:</strong> @Model.CustomerName</p>
+        <p><strong>Date:</strong> @Model.OrderDate.ToString("dd MMM yyyy")</p>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Line Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Quantity</td>
+                <td>$@item.UnitPrice.ToString("0.00")</td>
+                <td>$@item.LineTotal.ToString("0.00")</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr class="table-dark">
+            <td colspan="3"><strong>Order Total</strong></td>
+            <td><strong>$@Model.OrderTotal.ToString("0.00")</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+@* Status Action Buttons *@
+@if (Model.Status == MvcCore.Models.Enums.OrderStatus.Pending)
+{
+    <form asp-action="Confirm" asp-route-id="@Model.Id" method="post" class="d-inline">
+        @Html.AntiForgeryToken()
+        <button class="btn btn-success">✔ Confirm Order</button>
+    </form>
+}
+
+@if (Model.Status != MvcCore.Models.Enums.OrderStatus.Cancelled)
+{
+    <form asp-action="Cancel" asp-route-id="@Model.Id" method="post" class="d-inline"
+          onsubmit="return confirm('Cancel this order?')">
+        @Html.AntiForgeryToken()
+        <button class="btn btn-danger">✖ Cancel Order</button>
+    </form>
+}
+
+<a asp-action="Index" class="btn btn-outline-secondary mt-2">← Back to Orders</a>

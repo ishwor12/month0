@@ -1,0 +1,90 @@
+﻿@using MvcCore.Models.ViewModels
+@model ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Edit — @Model.Name</h2>
+    <a asp-action="Index" class="btn btn-outline-secondary">← Back</a>
+</div>
+
+<partial name="_Alerts" />
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <form asp-action="Edit" method="post">
+            @Html.AntiForgeryToken()
+
+            @* Hidden — keeps the Id in the form *@
+            <input asp-for="Id" type="hidden" />
+
+            <div class="row g-3">
+
+                <div class="col-md-6">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="SKU" class="form-label"></label>
+                    <input asp-for="SKU" class="form-control" />
+                    <span asp-validation-for="SKU" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label asp-for="Price" class="form-label"></label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input asp-for="Price" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Price" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label asp-for="StockQty" class="form-label">Stock Quantity</label>
+                    <input asp-for="StockQty" class="form-control" />
+                    <span asp-validation-for="StockQty" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label asp-for="LowStockThreshold" class="form-label">Low Stock Alert At</label>
+                    <input asp-for="LowStockThreshold" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="CategoryId" class="form-label">Category</label>
+                    <select asp-for="CategoryId" asp-items="ViewBag.Categories"
+                            class="form-select">
+                        <option value="">-- Select Category --</option>
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="SupplierId" class="form-label">Supplier</label>
+                    <select asp-for="SupplierId" asp-items="ViewBag.Suppliers"
+                            class="form-select">
+                        <option value="">-- Select Supplier --</option>
+                    </select>
+                    <span asp-validation-for="SupplierId" class="text-danger small"></span>
+                </div>
+
+            </div>
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <a asp-action="Index" class="btn btn-outline-secondary ms-2">Cancel</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

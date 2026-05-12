@@ -1,0 +1,68 @@
+﻿@using MvcCore.Models.ViewModels
+@model ProductViewModel
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>@Model.Name</h2>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id"
+           class="btn btn-outline-primary">Edit</a>
+        <a asp-action="Index" class="btn btn-outline-secondary ms-2">← Back</a>
+    </div>
+</div>
+
+<partial name="_Alerts" />
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="row g-3">
+
+            <div class="col-md-6">
+                <label class="text-muted small">SKU</label>
+                <p><code>@Model.SKU</code></p>
+            </div>
+
+            <div class="col-md-6">
+                <label class="text-muted small">Category</label>
+                <p>@Model.CategoryName</p>
+            </div>
+
+            <div class="col-md-6">
+                <label class="text-muted small">Supplier</label>
+                <p>@Model.SupplierName</p>
+            </div>
+
+            <div class="col-md-6">
+                <label class="text-muted small">Price</label>
+                <p class="fw-bold">$@Model.Price.ToString("0.00")</p>
+            </div>
+
+            <div class="col-md-6">
+                <label class="text-muted small">Stock</label>
+                <p>
+                    @if (Model.IsLowStock)
+                    {
+                        <span class="badge bg-danger fs-6">
+                            @Model.StockQty units ⚠️ Low Stock
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success fs-6">
+                            @Model.StockQty units
+                        </span>
+                    }
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <label class="text-muted small">Low Stock Alert Threshold</label>
+                <p>@Model.LowStockThreshold units</p>
+            </div>
+
+        </div>
+    </div>
+</div>

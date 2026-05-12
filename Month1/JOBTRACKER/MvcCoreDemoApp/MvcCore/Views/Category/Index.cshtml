@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Categories</h2>
+    <a asp-action="Create" class="btn btn-primary">+ New Category</a>
+</div>
+
+<partial name="_Alerts" />
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Products</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@(c.Description ?? "—")</td>
+                <td>
+                    <span class="badge bg-secondary">
+                        @c.Products.Count
+                    </span>
+                </td>
+                <td>
+                    <a asp-controller="Product" asp-action="Index"
+                       asp-route-categoryId="@c.Id"
+                       class="btn btn-sm btn-outline-primary">View Products</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!Model.Any())
+{
+    <div class="text-center text-muted py-5">
+        <p>No categories yet.</p>
+    </div>
+}

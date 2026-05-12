@@ -1,0 +1,74 @@
+﻿@using MvcCore.Models.ViewModels
+@model IEnumerable<ProductViewModel>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Products</h2>
+    <a asp-action="Create" class="btn btn-primary">+ New Product</a>
+</div>
+
+<partial name="_Alerts" />
+
+@* Search + Filter *@
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-4">
+        <input type="text" name="search" value="@ViewBag.Search"
+               class="form-control" placeholder="Search name or SKU..." />
+    </div>
+    <div class="col-md-3">
+        <select name="categoryId" asp-items="ViewBag.Categories"
+                class="form-select">
+            <option value="">All Categories</option>
+        </select>
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-outline-secondary">Filter</button>
+    </div>
+</form>
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>SKU</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td><code>@p.SKU</code></td>
+                <td>@p.CategoryName</td>
+                <td>$@p.Price.ToString("0.00")</td>
+                <td>
+                    @if (p.IsLowStock)
+                    {
+                        <span class="badge bg-danger">@p.StockQty ⚠️ Low</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success">@p.StockQty</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@p.Id"
+                       class="btn btn-sm btn-outline-primary">Edit</a>
+                    <form asp-action="Delete" asp-route-id="@p.Id"
+                          method="post" class="d-inline"
+                          onsubmit="return confirm('Delete this product?')">
+                        @Html.AntiForgeryToken()
+                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
