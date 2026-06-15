@@ -4,7 +4,7 @@ using MvcCore.Models;
 
 namespace MvcCore.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -49,8 +49,20 @@ namespace MvcCore.Data
                 .WithMany(p => p.SalesOrderItems)
                 .HasForeignKey(i => i.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
+            // Decimal precision
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
 
-            
+            modelBuilder.Entity<SalesOrderItem>()
+                .Property(i => i.UnitPrice)
+                .HasColumnType("decimal(18,2)");
+
+            // SKU unique
+            modelBuilder.Entity<Product>()
+                .HasIndex(p => p.SKU)
+                .IsUnique();
+
         }
     }
 }

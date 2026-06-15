@@ -8,8 +8,6 @@ namespace MvcCore.Repository.Implementation
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
         public ProductRepository(ApplicationDbContext context) : base(context) { }
-
-
         public async Task<IEnumerable<Product>> GetByCategoryAsync(int categoryId)
         => await _context.Products.Where
         (p => p.CategoryId == categoryId && p.IsActive)
@@ -27,7 +25,6 @@ namespace MvcCore.Repository.Implementation
         public async Task<IEnumerable<Product>> GetLowStockProductsAsync()
         => await _context.Products.Where(p => p.StockQty <= p.LowStockThreshold && p.IsActive)
             .Include(s => s.Category)
-            .Include(p => p.StockQty)
         .ToListAsync();
 
         public async Task<IEnumerable<Product>> SearchAsync(string keyword)

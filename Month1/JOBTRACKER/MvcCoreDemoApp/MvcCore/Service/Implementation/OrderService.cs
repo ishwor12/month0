@@ -114,6 +114,6 @@ namespace MvcCore.Service.Implementation
           => await _orderRepo.GetOrderWithItemsAsync(orderId);
 
         public async Task<IEnumerable<SalesOrder>> GetRecentOrdersAsync(int count = 10)
-        => await _orderRepo.GetRecentOrdersAsync();
+        => await _orderRepo.GetRecentOrdersAsync(count);
     }
 }

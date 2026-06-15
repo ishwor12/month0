@@ -28,16 +28,16 @@ namespace MvcCore.Repository.Implementation
        => await _context.SalesOrders
             .Include(o => o.Customer)
             .Include(o => o.Items)
-                .ThenInclude(i => i.Product)   // ← nested include
+             .ThenInclude(i => i.Product)   // ← nested include
             .FirstOrDefaultAsync(o => o.Id == orderId);
 
 
-        public async Task<IEnumerable<SalesOrder>> GetRecentOrdersAsync()
+        public async Task<IEnumerable<SalesOrder>> GetRecentOrdersAsync(int count = 10)
          => await _context.SalesOrders
             .Include(o => o.Customer)
             .Include(o => o.Items)
             .OrderByDescending(o => o.OrderDate)
-            .Take(5)                        // ← Static pagination 5 row pagination
+            .Take(count)                        // ← Static pagination 10 row pagination
             .ToListAsync();
     }
 }

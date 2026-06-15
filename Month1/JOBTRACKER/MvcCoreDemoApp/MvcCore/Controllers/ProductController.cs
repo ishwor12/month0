@@ -40,6 +40,9 @@ namespace MvcCore.Controllers
                 CategoryName = p.Category?.Name,
                 SupplierName = p.Supplier?.Name
             });
+            ViewBag.Categories = new SelectList(
+    await _categoryRepo.GetAllAsync(), "Id", "Name", CategoryId);
+            ViewBag.Search = search;
 
             return View(viewModels);
         }
@@ -81,7 +84,7 @@ namespace MvcCore.Controllers
             catch (InvalidOperationException ex)
             {
                 ModelState.AddModelError(string.Empty, ex.Message);
-                //await PopulateDropdownsAsync();
+                await PopulateDropdownsAsync();
                 return View(vm);
 
             }
@@ -136,7 +139,7 @@ namespace MvcCore.Controllers
             catch (InvalidOperationException ex)
             {
                 ModelState.AddModelError(string.Empty, ex.Message);
-                // await PopulateDropdownsAsync();
+                 await PopulateDropdownsAsync();
                 return View(vm);
 
             }

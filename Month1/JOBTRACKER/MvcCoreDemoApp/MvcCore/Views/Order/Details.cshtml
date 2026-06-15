@@ -49,7 +49,7 @@
 @* Status Action Buttons *@
 @if (Model.Status == MvcCore.Models.Enums.OrderStatus.Pending)
 {
-    <form asp-action="Confirm" asp-route-id="@Model.Id" method="post" class="d-inline">
+    <form asp-action="OrderConfirm" asp-route-id="@Model.Id" method="post" class="d-inline">
         @Html.AntiForgeryToken()
         <button class="btn btn-success">✔ Confirm Order</button>
     </form>
