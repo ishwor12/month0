@@ -1,0 +1,518 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\service\\implementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\service\\implementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\service\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\service\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\repository\\implementation\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\repository\\implementation\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\repository\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\repository\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\repository\\implementation\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\repository\\implementation\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\service\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\service\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\service\\implementation\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\service\\implementation\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\service\\implementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\service\\implementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\service\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\service\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\models\\viewmodels\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\models\\viewmodels\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|d:\\github cpractice\\month1\\jobtracker\\mvccoredemoapp\\mvccore\\repository\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A078AB8-775A-6E5E-7452-AD9DE6D51938}|MvcCore\\MvcCore.csproj|solutionrelative:mvccore\\repository\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 289,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T20:09:21.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Implementation\\OrderService.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Service\\Implementation\\OrderService.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Implementation\\OrderService.cs",
+              "RelativeToolTip": "MvcCore\\Service\\Implementation\\OrderService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAGkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:22:11.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Interface\\IOrderService.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Service\\Interface\\IOrderService.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Interface\\IOrderService.cs",
+              "RelativeToolTip": "MvcCore\\Service\\Interface\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:21:35.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Implementation\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Repository\\Implementation\\OrderRepository.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Implementation\\OrderRepository.cs",
+              "RelativeToolTip": "MvcCore\\Repository\\Implementation\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:20:40.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Interface\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Repository\\Interface\\IOrderRepository.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Interface\\IOrderRepository.cs",
+              "RelativeToolTip": "MvcCore\\Repository\\Interface\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:20:27.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Order\\Details.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwHEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T19:19:53.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Order\\Create.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Order\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T19:19:21.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T19:18:34.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "MvcCore\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:18:18.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Implementation\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Repository\\Implementation\\ProductRepository.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Implementation\\ProductRepository.cs",
+              "RelativeToolTip": "MvcCore\\Repository\\Implementation\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:16:14.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Interface\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Repository\\Interface\\IProductRepository.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Interface\\IProductRepository.cs",
+              "RelativeToolTip": "MvcCore\\Repository\\Interface\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:15:36.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Implementation\\ProductService.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Service\\Implementation\\ProductService.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Implementation\\ProductService.cs",
+              "RelativeToolTip": "MvcCore\\Service\\Implementation\\ProductService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:14:29.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Service\\Interface\\IProductService.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Interface\\IProductService.cs",
+              "RelativeToolTip": "MvcCore\\Service\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:13:29.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MvcCore\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T18:59:39.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:59:11.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:58:43.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAUwGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:58:12.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:57:43.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Program.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Program.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Program.cs",
+              "RelativeToolTip": "MvcCore\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T18:45:07.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Customer\\Edit.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Edit.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Customer\\Edit.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:44:13.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Create.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Customer\\Create.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Create.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Customer\\Create.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:40:55.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Details.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Customer\\Details.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Details.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Customer\\Details.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwFEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:40:40.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcCore\\Views\\Customer\\Index.cshtml",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "MvcCore\\Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T18:40:22.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "MvcCore\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAADIAAADAGzxM+zoqwFAAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T19:29:57.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CustomerViewModel.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Models\\ViewModels\\CustomerViewModel.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Models\\ViewModels\\CustomerViewModel.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Models\\ViewModels\\CustomerViewModel.cs",
+              "RelativeToolTip": "MvcCore\\Models\\ViewModels\\CustomerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T19:27:48.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Implementation\\CustomerService.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Service\\Implementation\\CustomerService.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Implementation\\CustomerService.cs",
+              "RelativeToolTip": "MvcCore\\Service\\Implementation\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T19:00:18.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Interface\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Service\\Interface\\ICustomerService.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Service\\Interface\\ICustomerService.cs",
+              "RelativeToolTip": "MvcCore\\Service\\Interface\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T18:47:58.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Implementation\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "MvcCore\\Repository\\Implementation\\CustomerRepository.cs",
+              "ToolTip": "D:\\github cpractice\\Month1\\JOBTRACKER\\MvcCoreDemoApp\\MvcCore\\Repository\\Implementation\\CustomerRepository.cs",
+              "RelativeToolTip": "MvcCore\\Repository\\Implementation\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T18:19:04.813Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 27,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

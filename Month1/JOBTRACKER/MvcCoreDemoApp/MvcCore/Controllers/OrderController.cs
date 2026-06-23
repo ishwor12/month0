@@ -25,11 +25,13 @@ namespace MvcCore.Controllers
         public async Task<IActionResult> Index(string? status)
         {
             IEnumerable<SalesOrder> orders;
+
             if (!string.IsNullOrWhiteSpace(status) &&
-           Enum.TryParse<OrderStatus>(status, out var parsedStatus))
+                Enum.TryParse<OrderStatus>(status, out var parsedStatus))
                 orders = await _orderService.GetOrdersByStatusAsync(parsedStatus);
             else
-                orders = await _orderService.GetAllOrdersAsync();
+                orders = await _orderService.GetAllWithDetailsAsync(); // ← updated
+
             var viewModels = orders.Select(o => new OrderViewModel
             {
                 Id = o.Id,
@@ -45,6 +47,7 @@ namespace MvcCore.Controllers
                     UnitPrice = i.UnitPrice
                 }).ToList() ?? new()
             });
+
             ViewBag.StatusFilter = status;
             return View(viewModels);
         }

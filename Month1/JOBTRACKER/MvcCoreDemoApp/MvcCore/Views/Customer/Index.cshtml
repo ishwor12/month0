@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MvcCore.Models.ViewModels.CustomerViewModel>
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Customers</h2>
+    <a asp-action="Create" class="btn btn-primary">+ New Customer</a>
+</div>
+
+<partial name="_Alerts" />
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-4">
+        <input type="text" name="search" value="@ViewBag.Search"
+               class="form-control" placeholder="Search name or email..." />
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-outline-secondary">Search</button>
+        @if (!string.IsNullOrWhiteSpace(ViewBag.Search as string))
+        {
+            <a asp-action="Index" class="btn btn-outline-danger ms-1">✕ Clear</a>
+        }
+    </div>
+</form>
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Orders</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.Email</td>
+                <td>@(c.Phone ?? "—")</td>
+                <td><span class="badge bg-secondary">@c.OrderCount</span></td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@c.Id"
+                       class="btn btn-sm btn-outline-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@c.Id"
+                       class="btn btn-sm btn-outline-primary">Edit</a>
+                    <form asp-action="Delete" asp-route-id="@c.Id"
+                          method="post" class="d-inline"
+                          onsubmit="return confirm('Delete this customer?')">
+                        @Html.AntiForgeryToken()
+                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!Model.Any())
+{
+    <div class="text-center text-muted py-5"><p>No customers found.</p></div>
+}

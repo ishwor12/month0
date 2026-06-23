@@ -5,7 +5,7 @@ namespace MvcCore.Service.Interface
 {
     public interface IOrderService
     {
-        Task<IEnumerable<SalesOrder>> GetAllOrdersAsync();
+        Task<IEnumerable<SalesOrder>> GetAllWithDetailsAsync();
         Task<SalesOrder?> GetOrderWithItemsAsync(int orderId);
         Task<IEnumerable<SalesOrder>> GetOrdersByStatusAsync(OrderStatus status);
         Task<IEnumerable<SalesOrder>> GetRecentOrdersAsync(int count = 10);

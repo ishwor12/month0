@@ -45,6 +45,8 @@ namespace MvcCore.Service.Implementation
             await _context.SaveChangesAsync();
 
         }
+        public async Task<Product?> GetProductWithDetailsAsync(int id)
+        => await _productRepo.GetProductWithDetailsAsync(id);
 
         public async Task<IEnumerable<Product>> GetAllProductsAsync()
         => await _productRepo.GetAllAsync();

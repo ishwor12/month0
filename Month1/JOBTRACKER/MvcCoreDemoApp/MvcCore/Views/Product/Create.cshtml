@@ -1,5 +1,4 @@
-﻿@using MvcCore.Models.ViewModels
-@model ProductViewModel
+﻿@model MvcCore.Models.ViewModels.ProductViewModel
 
 @{
     ViewData["Title"] = "New Product";
@@ -21,60 +20,82 @@
 
                 <div class="col-md-6">
                     <label asp-for="Name" class="form-label"></label>
-                    <input asp-for="Name" class="form-control" placeholder="Product name" />
-                    <span asp-validation-for="Name" class="text-danger small"></span>
+                    <input asp-for="Name" class="form-control"
+                           placeholder="Product name" />
+                    <span asp-validation-for="Name"
+                          class="text-danger small"></span>
                 </div>
 
                 <div class="col-md-6">
                     <label asp-for="SKU" class="form-label"></label>
-                    <input asp-for="SKU" class="form-control" placeholder="e.g. PROD-001" />
-                    <span asp-validation-for="SKU" class="text-danger small"></span>
+                    <input asp-for="SKU" class="form-control"
+                           placeholder="e.g. ELEC-001" />
+                    <span asp-validation-for="SKU"
+                          class="text-danger small"></span>
                 </div>
 
                 <div class="col-md-4">
                     <label asp-for="Price" class="form-label"></label>
                     <div class="input-group">
                         <span class="input-group-text">$</span>
-                        <input asp-for="Price" class="form-control" placeholder="0.00" />
+                        <input asp-for="Price" class="form-control"
+                               placeholder="0.00" />
                     </div>
-                    <span asp-validation-for="Price" class="text-danger small"></span>
+                    <span asp-validation-for="Price"
+                          class="text-danger small"></span>
                 </div>
 
                 <div class="col-md-4">
-                    <label asp-for="StockQty" class="form-label">Stock Quantity</label>
-                    <input asp-for="StockQty" class="form-control" placeholder="0" />
-                    <span asp-validation-for="StockQty" class="text-danger small"></span>
+                    <label asp-for="StockQty" class="form-label">
+                        Stock Quantity
+                    </label>
+                    <input asp-for="StockQty" class="form-control"
+                           placeholder="0" />
+                    <span asp-validation-for="StockQty"
+                          class="text-danger small"></span>
                 </div>
 
                 <div class="col-md-4">
-                    <label asp-for="LowStockThreshold" class="form-label">Low Stock Alert At</label>
+                    <label asp-for="LowStockThreshold" class="form-label">
+                        Low Stock Alert At
+                    </label>
                     <input asp-for="LowStockThreshold" class="form-control" />
-                    <span asp-validation-for="LowStockThreshold" class="text-danger small"></span>
                 </div>
 
                 <div class="col-md-6">
-                    <label asp-for="CategoryId" class="form-label">Category</label>
-                    <select asp-for="CategoryId" asp-items="ViewBag.Categories"
+                    <label asp-for="CategoryId" class="form-label">
+                        Category
+                    </label>
+                    <select asp-for="CategoryId"
+                            asp-items="ViewBag.Categories"
                             class="form-select">
                         <option value="">-- Select Category --</option>
                     </select>
-                    <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                    <span asp-validation-for="CategoryId"
+                          class="text-danger small"></span>
                 </div>
 
                 <div class="col-md-6">
-                    <label asp-for="SupplierId" class="form-label">Supplier</label>
-                    <select asp-for="SupplierId" asp-items="ViewBag.Suppliers"
+                    <label asp-for="SupplierId" class="form-label">
+                        Supplier
+                    </label>
+                    <select asp-for="SupplierId"
+                            asp-items="ViewBag.Suppliers"
                             class="form-select">
                         <option value="">-- Select Supplier --</option>
                     </select>
-                    <span asp-validation-for="SupplierId" class="text-danger small"></span>
+                    <span asp-validation-for="SupplierId"
+                          class="text-danger small"></span>
                 </div>
 
             </div>
 
             <div class="mt-4">
-                <button type="submit" class="btn btn-primary">Create Product</button>
-                <a asp-action="Index" class="btn btn-outline-secondary ms-2">Cancel</a>
+                <button type="submit" class="btn btn-primary">
+                    Create Product
+                </button>
+                <a asp-action="Index"
+                   class="btn btn-outline-secondary ms-2">Cancel</a>
             </div>
 
         </form>

@@ -9,5 +9,6 @@ namespace MvcCore.Repository.Interface
         Task<IEnumerable<Product>> GetBySupplierAsync(int supplierId);
         Task<Product?> GetBySkuAsync(string sku);
         Task<IEnumerable<Product>> SearchAsync(string keyword);
+        Task<Product?> GetProductWithDetailsAsync(int id);
     }
 }

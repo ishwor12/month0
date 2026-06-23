@@ -31,6 +31,12 @@ namespace MvcCore.Controllers
                 return View(category);
             }
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
 

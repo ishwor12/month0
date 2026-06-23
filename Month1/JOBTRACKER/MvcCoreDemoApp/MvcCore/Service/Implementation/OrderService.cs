@@ -102,9 +102,8 @@ namespace MvcCore.Service.Implementation
             await _orderRepo.AddAsync(order);
             await _context.SaveChangesAsync();
         }
-
-        public async Task<IEnumerable<SalesOrder>> GetAllOrdersAsync()
-         => await _orderRepo.GetAllAsync();
+        public async Task<IEnumerable<SalesOrder>> GetAllWithDetailsAsync()
+            => await _orderRepo.GetAllWithDetailsAsync();
 
         public async Task<IEnumerable<SalesOrder>> GetOrdersByStatusAsync(OrderStatus status)
          => await _orderRepo.GetOrdersByStatusAsync(status);

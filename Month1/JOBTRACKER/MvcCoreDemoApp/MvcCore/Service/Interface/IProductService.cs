@@ -6,6 +6,7 @@ namespace MvcCore.Service.Interface
     {
         Task<IEnumerable<Product>> GetAllProductsAsync();
         Task<Product?> GetProductByIdAsync(int id);
+        Task<Product?> GetProductWithDetailsAsync(int id);
         Task<IEnumerable<Product>> GetLowStockProductsAsync();
         Task<IEnumerable<Product>> SearchProductsAsync(string keyword);
         Task<IEnumerable<Product>> GetByCategoryAsync(int categoryId);

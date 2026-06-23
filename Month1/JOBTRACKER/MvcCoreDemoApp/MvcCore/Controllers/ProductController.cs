@@ -89,6 +89,29 @@ namespace MvcCore.Controllers
 
             }
         }
+        // GET: /Product/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            // Use the Include version, not plain GetById
+            var product = await _productService.GetProductWithDetailsAsync(id);
+            if (product == null) return NotFound();
+
+            var vm = new ProductViewModel
+            {
+                Id = product.Id,
+                Name = product.Name,
+                SKU = product.SKU,
+                Price = product.Price,
+                StockQty = product.StockQty,
+                LowStockThreshold = product.LowStockThreshold,
+                CategoryId = product.CategoryId,
+                SupplierId = product.SupplierId,
+                CategoryName = product.Category?.Name,  // ✅ now loaded
+                SupplierName = product.Supplier?.Name   // ✅ now loaded
+            };
+
+            return View(vm);
+        }
         // GET: /Product/Edit/5
 
         public async Task<IActionResult> Edit(int id)

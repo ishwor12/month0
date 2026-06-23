@@ -1,5 +1,4 @@
-﻿@using MvcCore.Models.ViewModels
-@model IEnumerable<ProductViewModel>
+﻿@model IEnumerable<MvcCore.Models.ViewModels.ProductViewModel>
 
 @{
     ViewData["Title"] = "Products";
@@ -19,13 +18,18 @@
                class="form-control" placeholder="Search name or SKU..." />
     </div>
     <div class="col-md-3">
-        <select name="categoryId" asp-items="ViewBag.Categories"
+        <select name="CategoryId" asp-items="ViewBag.Categories"
                 class="form-select">
             <option value="">All Categories</option>
         </select>
     </div>
     <div class="col-auto">
         <button type="submit" class="btn btn-outline-secondary">Filter</button>
+        @if (!string.IsNullOrWhiteSpace(ViewBag.Search as string)
+             || ViewBag.SelectedCategory != null)
+        {
+            <a asp-action="Index" class="btn btn-outline-danger ms-1">✕ Clear</a>
+        }
     </div>
 </form>
 
@@ -35,6 +39,7 @@
             <th>Name</th>
             <th>SKU</th>
             <th>Category</th>
+            <th>Supplier</th>
             <th>Price</th>
             <th>Stock</th>
             <th>Actions</th>
@@ -47,11 +52,14 @@
                 <td>@p.Name</td>
                 <td><code>@p.SKU</code></td>
                 <td>@p.CategoryName</td>
+                <td>@p.SupplierName</td>
                 <td>$@p.Price.ToString("0.00")</td>
                 <td>
                     @if (p.IsLowStock)
                     {
-                        <span class="badge bg-danger">@p.StockQty ⚠️ Low</span>
+                        <span class="badge bg-danger">
+                            @p.StockQty ⚠️ Low
+                        </span>
                     }
                     else
                     {
@@ -59,6 +67,8 @@
                     }
                 </td>
                 <td>
+                    <a asp-action="Details" asp-route-id="@p.Id"
+                       class="btn btn-sm btn-outline-info">Details</a>
                     <a asp-action="Edit" asp-route-id="@p.Id"
                        class="btn btn-sm btn-outline-primary">Edit</a>
                     <form asp-action="Delete" asp-route-id="@p.Id"
@@ -72,3 +82,10 @@
         }
     </tbody>
 </table>
+
+@if (!Model.Any())
+{
+    <div class="text-center text-muted py-5">
+        <p>No products found.</p>
+    </div>
+}

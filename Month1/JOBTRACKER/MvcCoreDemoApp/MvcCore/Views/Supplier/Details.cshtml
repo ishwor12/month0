@@ -1,0 +1,55 @@
+﻿@model MvcCore.Models.ViewModels.SupplierViewModel
+
+@{
+    ViewData["Title"] = "Supplier Details";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>@Model.Name</h2>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id"
+           class="btn btn-outline-primary">Edit</a>
+        <a asp-action="Index"
+           class="btn btn-outline-secondary ms-2">← Back</a>
+    </div>
+</div>
+
+<partial name="_Alerts" />
+
+<div class="card shadow-sm mb-3">
+    <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="text-muted small">Contact Name</label>
+                <p>@(Model.ContactName ?? "—")</p>
+            </div>
+            <div class="col-md-6">
+                <label class="text-muted small">Email</label>
+                <p>@(Model.Email ?? "—")</p>
+            </div>
+            <div class="col-md-6">
+                <label class="text-muted small">Total Products</label>
+                <p>
+                    <span class="badge bg-secondary fs-6">
+                        @Model.ProductCount products
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.ProductNames.Any())
+{
+    <div class="card shadow-sm">
+        <div class="card-header table-dark">
+            <strong>Products from this Supplier</strong>
+        </div>
+        <ul class="list-group list-group-flush">
+            @foreach (var name in Model.ProductNames)
+            {
+                <li class="list-group-item">@name</li>
+            }
+        </ul>
+    </div>
+}

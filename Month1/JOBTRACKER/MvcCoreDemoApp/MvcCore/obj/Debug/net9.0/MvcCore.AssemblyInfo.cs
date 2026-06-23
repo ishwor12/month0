@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MvcCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8c6d49f099347f2473e7e447e89c0ba45400de7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03837601bf5dbd9174196c35b06cda1f15a2fe68")]
 [assembly: System.Reflection.AssemblyProductAttribute("MvcCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MvcCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

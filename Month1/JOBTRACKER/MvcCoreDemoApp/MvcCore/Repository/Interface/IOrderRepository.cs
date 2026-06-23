@@ -9,6 +9,7 @@ namespace MvcCore.Repository.Interface
         Task<IEnumerable<SalesOrder>> GetOrdersByCustomerAsync(int customerId);
         Task<IEnumerable<SalesOrder>> GetOrdersByStatusAsync(OrderStatus status);
         Task<IEnumerable<SalesOrder>> GetRecentOrdersAsync(int count = 10);
+        Task<IEnumerable<SalesOrder>> GetAllWithDetailsAsync();
 
     }
 }

@@ -14,6 +14,12 @@ namespace MvcCore.Repository.Implementation
         .Include(p => p.Category)
         .Include(p => p.Supplier).ToListAsync();
 
+        public async Task<Product?> GetProductWithDetailsAsync(int id)
+        => await _context.Products
+        .Include(p => p.Category)
+        .Include(p => p.Supplier)
+        .FirstOrDefaultAsync(p => p.Id == id);
+
         public async Task<Product?> GetBySkuAsync(string sku)
         => await _context.Products.FirstOrDefaultAsync(p => p.SKU == sku);
 

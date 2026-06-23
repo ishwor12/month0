@@ -69,3 +69,8 @@ Problem: // Anytime if  you rename a column in DB?
 whereas: ViewModel Only exposes what view needs
 
 // can use Automapper instead also.
+
+
+// ReSTART :: Removed Identity we will add it latter
+
+//Week 2:

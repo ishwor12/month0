@@ -11,6 +11,13 @@ namespace MvcCore.Repository.Implementation
 
         public OrderRepository(ApplicationDbContext context) : base(context) { }
 
+        public async Task<IEnumerable<SalesOrder>> GetAllWithDetailsAsync()
+        => await _context.SalesOrders
+        .Include(o => o.Customer)
+        .Include(o => o.Items)
+        .OrderByDescending(o => o.OrderDate)
+        .ToListAsync();
+
 
         public async Task<IEnumerable<SalesOrder>> GetOrdersByCustomerAsync(int customerId)
        => await _context.SalesOrders.Where(o => o.CustomerId == customerId)
